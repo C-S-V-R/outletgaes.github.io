@@ -1,0 +1,535 @@
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.section-titulo{
+    background-color: gray;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*HEADER*/
+.header{
+    position: fixed;
+    z-index: 10;
+    margin: 0;
+    top: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-items: center;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.nav{
+    width: 100%;
+    height: max-content;
+}
+
+.nav-ul{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    justify-content: space-evenly;
+}
+
+.nav-li{
+    transition: all 0.5s;
+    padding: 1% 5%;
+    border-radius: 15px;
+}
+
+.nav-li:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: beige;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-li a{
+    color: black;
+}
+
+.sub-menu{
+    display: none;
+}
+.sub-li-hidden{
+    display: auto;
+}
+.sub-li-show{
+    display: flex;
+    height: 100vh;
+    align-content: space-evenly;
+}
+/*HEADER*/
+
+/*SECTIONS*/
+
+.section{
+    margin: 50px 0;
+}
+
+/*SECTIONS*/
+
+/*CARDS*/
+.cards{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.card{
+    transition: all 0.5s;
+    min-width: 25%;
+    height: 500px;
+    padding-bottom: 15px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.oferta{
+    object-position: 0;
+    top: 0.5%;
+    right: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(223, 32, 32);
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-producto{
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.aviso{
+    padding: 0;
+    margin: 10px 0;
+    font-weight: bold;
+    color: burlywood;
+}
+
+.precios{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.card-precio{
+    padding: 0px 10px;
+    margin: 5px 0;
+    font-weight: lighter;
+    font-size: 17px;
+    text-align: start;
+}
+
+.p-oferta{
+    text-decoration: line-through;
+    font-size: 15px;
+    color: gray;
+}
+
+.en-existencia{
+    color: green;
+    font-weight: bolder;
+}
+
+.pedido{
+    color: chocolate;
+    font-weight: bolder;
+}
+
+.descripcion{
+    text-align: start;
+    padding: 0px 15px;
+    margin: 0;
+}
+
+.card:hover{
+    transition: all 0.5s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.revisar-producto{
+    transition: all 0.3s;
+    color: black;
+}
+
+.revisar-producto:hover{
+    transition: all 0.3s;
+    color: goldenrod;
+    text-decoration-line: underline;
+}
+
+.tam{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.tam-select{
+    transition: all 0.3s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 2px 2%;
+    width: 30%;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.tam-select:hover{
+    transition: all 0.3s;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.ver-color{
+    font-size: 15px;
+    transition: all 0.3s;
+    text-decoration: none;
+    justify-content: center;
+    justify-self: center;
+    color: brown;
+    display: flex;
+    margin: 3% 2%;
+    padding: 5px 15px;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.ver-color:hover{
+    transition: all 0.3s;
+    background-color: gray;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: beige;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.producto-oferta{
+    font-weight: bold;
+    color: #ffffff;
+    width: max-content;
+    padding: 5px 0;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(223, 32, 32);
+}
+
+.p-producto-oferta{
+    text-decoration: line-through;
+    font-size: 15px;
+    color: gray;
+}
+/*CARDS*/
+
+/*VENTANA-COMPRA*/
+
+.ventana{
+    z-index: 5;
+    display: flex;
+    width: 100vw;
+    overflow-y: auto;
+    background-color: gray;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.ventana-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height: max-content;
+}
+
+.vent{
+    margin: 10px 20px;
+}
+
+.ventana-1{
+    width: 30%;
+    justify-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.colores{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.op-color{
+    min-width: 50px;
+    height: 50px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 10px;
+}
+
+.tela-sonw{
+    background-image: 
+    conic-gradient(
+        from 0deg,
+        rgba(0, 0, 0, 0.10) 0deg,
+        transparent 10deg,
+        rgba(0, 0, 0, 0.10) 20deg
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.35) 0px,
+        rgba(255, 255, 255, 0.35) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.ventana-2{
+    width: 50%;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.total{
+    font-size: 30px;
+}
+
+.compra-btns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.op-compra{
+    width: 80%;
+    height: 80px;
+    margin: 10px 0;
+    font-size: 20px;
+
+    transition: all 0.3s;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.apartar{
+    color: brown;
+    border-color: brown;
+}
+
+.op-compra:hover{
+    transition: all 0.3s;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 2px;
+    border-style: none;
+}
+
+.cerrar{
+    justify-self: start;
+    transition: all 0.3s;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.cerrar:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+/*VENTANA-COMPRA*/
+
+/*FLOTANTE*/
+.button-whats{
+    transition: all 0.5s;
+    z-index: 9;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2%;
+    right: 1%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(235, 235, 235, 0.479);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.button-whats img{
+    height: 100%;
+}
+
+.num-whats{
+    transition: all 0.3s;
+    font-size: 0px;
+    font-weight: bold;
+    cursor: default;
+    color: green;
+}
+
+.button-whats:hover{
+    transition: all 0.5s;
+    width: max-content;
+    padding: 5px;
+}
+
+.button-whats:hover > .num-whats{
+    transition: all 0.5s;
+    font-size: 20px;
+}
+/*FLOTANTE*/
+
+@media (max-width:800px){
+    /*HOVER*/
+    .nav-ul{
+        justify-self: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        width: 30%;
+        margin-left: 5%;
+    }
+    .nav-li{
+        font-size: 20px;
+    }
+    .sub-menu{
+        display: flex;
+        margin: 10px 20px;
+        color: black;
+    }
+    .sub-li-hidden{
+        transition: all 0.3s ease;
+        display: none;
+    }
+    /*HOVER*/
+
+    /*CARDS*/
+    .card{
+        min-width: 80.5%;
+        margin: 2% 10px;
+    }
+    .card-precio{
+    font-size: 13px;
+    text-align: center;
+    }
+    /*CARDS*/
+
+    /*PRODUCTO*/
+    .producto{
+        justify-content: center;
+        align-content: space-evenly;
+        overflow-y: scroll;
+    }
+    .producto-img{
+        height: 50%;
+    }
+    .producto-container{
+        width: 100%;
+        text-align: center;
+    }
+    .compra{
+        display: flex;
+        justify-self: center;
+        justify-content: space-evenly;
+    }
+    /*PRODUCTO*/
+
+    /*VENTANA*/
+    .ventana{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .vent{
+        min-width: 90%;
+    }
+    /*VENTANA*/
+}

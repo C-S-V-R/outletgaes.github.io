@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlet Gaes</title>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+
+    <header id="Header" class="header">
+        <div class="logo">
+            <h1 class="logo-h1">OUTLET GAES</h1>
+        </div>
+
+        <div class="nav">
+            <p class="nav-li sub-menu" href="">Menu</p>
+            <ul class="nav-ul sub-li-hidden">
+                <li class="nav-li"> <a href="#Literas">Literas</a> </li>
+                <li class="nav-li"> <a href="#Bases">Bases</a> </li>
+                <li class="nav-li"> <a href="">Recamaras</a> </li>
+                <li class="nav-li"> <a href="#Colchones">Colchones</a> </li>
+                <li class="nav-li"> <a href="">Sofas</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="Ventana" class="ventana" style="height: 0px;">
+        <div class="ventana-container">
+            <div class="vent ventana-1">
+
+                <div id="Cerrar" class="cerrar"></div>
+                <h1 id="p-ventana" class="producto"></h1>
+                <h2 class="tam-producto">Tamaño: <span id="Tam-producto" class="tam-producto"></span></h2>
+                
+                <p id="tubo-color">Color de Tubular: <span id="color1"></span></p>
+                <div id="color_tubo" class="colores colores-tubo">
+                    <button class="op-color" style="background-color: blue;" data-color="Azul"></button>
+                    <button class="op-color" style="background-color: beige;" data-color="Beige"></button>
+                    <button class="op-color" style="background-color: white;" data-color="Blanco"></button>
+                    <button class="op-color" style="background-color: brown;" data-color="Café"></button>
+                    <button class="op-color" style="background-color: #b87333;" data-color="Cobre"></button>
+                    <button class="op-color" style="background-color: silver;" data-color="Cromo"></button>
+                    <button class="op-color" style="background-color: gray;" data-color="Gris Oxford"></button>
+                    <button class="op-color" style="background-color: #EAE0D5;" data-color="Gris Perla"></button>
+                    <button class="op-color" style="background-color: purple;" data-color="Morado"></button>
+                    <button class="op-color" style="background-color: black;" data-color="Negro"></button>
+                    <button class="op-color" style="background-color: red;" data-color="Rojo"></button>
+                    <button class="op-color" style="background-color: pink;" data-color="Rosa"></button>
+                    <button class="op-color" style="background-color: #722F37;" data-color="Vino"></button>
+                </div>
+
+                <p id="texto-tela" class="tela-color">Color de Tela: <span id="color2"></span></p>
+                <div id="color_tela" class="colores colores-tela">
+                    <button class="op-color" style="background-color: navy;" data-color="Marino"></button>
+                    <button class="op-color tela-sonw" style="background-color: navy;"
+                        data-color="Marino (Texturizado)"></button>
+                    <button class="op-color" style="background-color: #722F37;" data-color="Vino"></button>
+                    <button class="op-color" style="background-color: #FF66CC;" data-color="Rosa Bella"></button>
+                    <button class="op-color" style="background-color: silver;" data-color="Plata"></button>
+                    <button class="op-color tela-sonw" style="background-color: silver;"
+                        data-color="Plata (Texturizado)"></button>
+                    <button class="op-color" style="background-color: beige;" data-color="Beige"></button>
+                    <button class="op-color" style="background-color: black;" data-color="Negro"></button>
+                    <button class="op-color tela-sonw" style="background-color: black;"
+                        data-color="Negro (Texturizado)"></button>
+                    <button class="op-color" style="background-color: #D2691E;" data-color="Cocoa"></button>
+                    <button class="op-color" style="background-color: purple;" data-color="Morado"></button>
+                    <button class="op-color" style="background-color: gray;" data-color="Gris Oxford"></button>
+                    <button class="op-color tela-sonw" style="background-color: gray;"
+                        data-color="Gris Oxford (Texturizado)"></button>
+                    <button class="op-color" style="background-color: #C8A2C8;" data-color="Lila"></button>
+                    <button class="op-color tela-sonw" style="background-color: chocolate;"
+                        data-color="Chocolate (Texturizado)"></button>
+                    <button class="op-color tela-sonw" style="background-color: #D2B48C;"
+                        data-color="Avellana (Texturizado)"></button>
+                    <button class="op-color tela-sonw" style="background-color: #FFDB58;"
+                        data-color="Mostaza (Texturizado)"></button>
+                    <button class="op-color tela-sonw" style="background-color: #C2B280;"
+                        data-color="Arena (Texturizado)"></button>
+                    <button class="op-color tela-sonw" style="background-color: #969696;"
+                        data-color="Muse (Texturizado)"></button>
+                </div>
+
+            </div>
+
+            <div class="vent ventana-2">
+                <h1 class="envios">Envio <span>GRATIS</span> a todo Tizayuca</h1>
+                <p id="Total" class="total">Total: $<span id="Precio"></span></p>
+                <div class="compra-btns">
+                    <button class="op-compra">Comprar</button>
+                    <button class="op-compra apartar">Apartar con la mitad del precio</button>
+                </div>
+            </div>
+    </section>
+
+    <h1 id="Literas" class="section-titulo">LITERAS</h1>
+
+    <section class="section" class="cards">
+        <div class="cards-container">
+
+            <div id="Card" class="card" producto="Litera: Galáctica" tam-indi="Individual" precio-indiv="5500"
+                tam-matri="Mixta" precio-matri="5900">
+                <p class="oferta">Oferta 20%</p>
+                <div class="card-img" style="background-image: url(./images/Literas/Galáctica.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            Individual: $<span id="indi-precio">5,500</span>
+                            <br>
+                            Mixta: $<span id="matri-precio">5,900</span>
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Litera: Galáctica</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">
+                    Individual: 200cm x 102cm x 170cm
+                    <br>
+                    Mixta: 200cm x 133cm x 170cm
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Mixta</a></p>
+                </div>
+
+                <!--<p class="ver-color">VER COLORES</p>-->
+            </div>
+
+            <div id="Card" class="card" producto="Litera: Hamburgo" tam-indi="Individual" precio-indiv="5500"
+                tam-matri="Mixta" precio-matri="5900">
+                <div class="card-img" style="background-image: url(./images/Literas/Hamburgo.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            Individual: $<span id="indi-precio">5,500</span>
+                            <br>
+                            Mixta: $<span id="matri-precio">5,900</span>
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Litera: Hamburgo</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">
+                    Individual: 200cm x 102cm x 170cm
+                    <br>
+                    Mixta: 200cm x 133cm x 170cm
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Mixta</a></p>
+                </div>
+
+                <!--<p class="ver-color">VER COLORES</p>-->
+            </div>
+
+            <div id="Card" class="card" producto="Litera: Monarca" tam-indi="Individual" precio-indiv="5100"
+                tam-matri="Mixta" precio-matri="5600">
+                <div class="card-img" style="background-image: url(./images/Literas/Monarca.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            Individual: $<span id="indi-precio">5,100</span>
+                            <br>
+                            Mixta: $<span id="matri-precio">5,600</span>
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Litera: Monarca</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">
+                    Individual: 200cm x 102cm x 170cm
+                    <br>
+                    Mixta: 200cm x 133cm x 170cm
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Mixta</a></p>
+                </div>
+
+                <!--<p class="ver-color">VER COLORES</p>-->
+            </div>
+
+            <div id="Card" class="card" producto="Litera: Realeza" tam-indi="Individual" precio-indiv="5300"
+                tam-matri="Mixta" precio-matri="5700">
+                <div class="card-img" style="background-image: url(./images/Literas/Realeza.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            Individual: $<span id="indi-precio">5,300</span>
+                            <br>
+                            Mixta: $<span id="matri-precio">5,700</span>
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Litera: Realeza</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">
+                    Individual: 200cm x 102cm x 170cm
+                    <br>
+                    Mixta: 200cm x 133cm x 170cm
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Mixta</a></p>
+                </div>
+
+                <!--<p class="ver-color">VER COLORES</p>-->
+            </div>
+
+            <div id="Card" class="card tubular" producto="Litera: Ternurita" tam-indi="Individual" precio-indiv="4700"
+                tam-matri="Mixta" precio-matri="5100">
+                <div class="card-img" style="background-image: url(./images/Literas/Ternurita.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            Individual: $<span id="indi-precio">4,700</span>
+                            <br>
+                            Mixta: $<span id="matri-precio">5,100</span>
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Litera: Ternurita</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">
+                    Individual: 200cm x 102cm x 170cm
+                    <br>
+                    Mixta: 200cm x 133cm x 170cm
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Mixta</a></p>
+                </div>
+
+                <!--<p class="ver-color">VER COLORES</p>-->
+            </div>
+
+        </div>
+    </section>
+
+    <h1 id="Bases" class="section-titulo">BASES</h1>
+
+    <section class="section" class="cards">
+        <div class="cards-container">
+
+            <div id="Card" class="card tubular" producto="Base: Atenas" tam-indi="Individual" precio-indiv="2400"
+                tam-matri="Matrimonial" precio-matri="2900" tam-qs="Queen Size" precio-qs="3300" tam-ks="King Size"
+                precio-ks="3900">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Atenas.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $2,400 | MAT: $2,900
+                            <br>
+                            Q.S: $3,300 | K.S: $3,900
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Atenas</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Madera de pino con acabados limpios. Diseño versátil y gran durabilidad.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Galáctica" tam-indi="Individual" precio-indiv="4100"
+                tam-matri="Matrimonial" precio-matri="4300" tam-qs="Queen Size" precio-qs="4700" tam-ks="King Size"
+                precio-ks="5700">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Galáctica.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,100 | MAT: $4,300
+                            <br>
+                            Q.S: $4,700 | K.S: $5,700
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Galáctica</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Estructura metálica reforzada con diseño geométrico moderno.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Realeza" tam-indi="Individual" precio-indiv="4500"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="9000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Realeza.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,500 | MAT: $5,900
+                            <br>
+                            Q.S: A cotizar | K.S: $9,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Realeza</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Cabecera alta capitonada. Estética majestuosa y máxima firmeza.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Marruecos" tam-indi="Individual" precio-indiv="3800"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="7700" tam-ks="King Size"
+                precio-ks="8000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Marruecos.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,800 | MAT: $5,900
+                            <br>
+                            Q.S: $7,700 | K.S: $8,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Marruecos</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Diseño inspirado en detalles mediterráneos con acabados en madera de pino.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Samurai" tam-indi="Individual" precio-indiv="4000"
+                tam-matri="Matrimonial" precio-matri="4600" tam-qs="Queen Size" precio-qs="5200" tam-ks="King Size"
+                precio-ks="6500">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Samurai.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,000 | MAT: $4,600
+                            <br>
+                            Q.S: $5,200 | K.S: $6,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Samurai</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Estilo oriental minimalista de líneas rectas. Madera de pino de alta resistencia.
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Emperatriz" tam-indi="Individual" precio-indiv="4500"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="9000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Emperatriz.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,500 | MAT: $5,900
+                            <br>
+                            Q.S: A cotizar | K.S: $9,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Emperatriz</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Acabados sofisticados con relieves en cabecera. Calidad premium garantizada.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Scarlett" tam-indi="Individual" precio-indiv="4500"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="9000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Scarlet.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,500 | MAT: $5,900
+                            <br>
+                            Q.S: A cotizar | K.S: $9,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Scarlett</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Diseño elegante con acabados premium y estructura de pino de alta resistencia.
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Bahamas" tam-indi="Individual" precio-indiv="3800"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="7700" tam-ks="King Size"
+                precio-ks="8000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Bahamas.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,800 | MAT: $5,900
+                            <br>
+                            Q.S: $7,700 | K.S: $8,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Bahamas</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Estilo fresco y caribeño. Base tapizada con materiales de alta durabilidad.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Segovia" tam-indi="Individual" precio-indiv="4500"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="9000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Segovia.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,500 | MAT: $5,900
+                            <br>
+                            Q.S: A cotizar | K.S: $9,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Segovia</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Un clásico renovado con soporte ortopédico y estética tradicional en madera.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Ajedrez" tam-indi="Individual" precio-indiv="4000"
+                tam-matri="Matrimonial" precio-matri="4600" tam-qs="Queen Size" precio-qs="5200" tam-ks="King Size"
+                precio-ks="6500">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Ajedrez.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,000 | MAT: $4,600
+                            <br>
+                            Q.S: $5,200 | K.S: $6,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Ajedrez</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Diseño rítmico y moderno. Estructura firme ideal para cualquier tipo de colchón.
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Praga" tam-indi="Individual" precio-indiv="3800"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="7700" tam-ks="King Size"
+                precio-ks="8000">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Praga.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,800 | MAT: $5,900
+                            <br>
+                            Q.S: $7,700 | K.S: $8,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Praga</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Inspiración europea con acabados sobrios y alta resistencia en madera de pino.
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card" producto="Base: Otawa" tam-indi="Individual" precio-indiv="4000"
+                tam-matri="Matrimonial" precio-matri="4600" tam-qs="Queen Size" precio-qs="5200" tam-ks="King Size"
+                precio-ks="6500">
+                <div class="card-img" style="background-image: url(./images/Bases/B-Otawa.jpg);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $4,000 | MAT: $4,600
+                            <br>
+                            Q.S: $5,200 | K.S: $6,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Base: Otawa</h1>
+                <p class="aviso">(Colchones se venden por separado)</p>
+                <p class="descripcion">Diseño nórdico minimalista. Soporte robusto y acabados de primera calidad.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <h1 id="Colchones" class="section-titulo">COLCHONES</h1>
+
+    <section class="section" class="cards">
+        <div class="cards-container">
+
+            <div id="Card" class="card colchon" producto="Colchón: Sueña" tam-indi="Individual" precio-indiv="3600"
+                tam-matri="Matrimonial" precio-matri="4800" tam-qs="Queen Size" precio-qs="6000" tam-ks="King Size"
+                precio-ks="7500">
+                <div class="card-img" style="background-image: url(./images/Colchones/Sueña.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,600 | MAT: $4,800
+                            <br>
+                            Q.S: $6,000 | K.S: $7,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Sueña</h1>
+                <p class="aviso">(Doble Colchoneta)</p>
+                <p class="descripcion">Núcleo firme de alta densidad con doble colchoneta. Tela de punto suave y
+                    capitonado de brinco.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Sky" tam-indi="Individual" precio-indiv="2200"
+                tam-matri="Matrimonial" precio-matri="2600" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="A cotizar">
+                <div class="card-img" style="background-image: url(./images/Colchones/Sky.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $2,200 | MAT: $2,600
+                            <br>
+                            Q.S: A cotizar | K.S: A cotizar
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Sky</h1>
+                <p class="aviso">(Económico y Práctico)</p>
+                <p class="descripcion">Firmeza media, ideal para literas o visitas. Tela resistente capitonada con
+                    Delcron.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Vive Plus" tam-indi="Individual" precio-indiv="5100"
+                tam-matri="Matrimonial" precio-matri="9000" tam-qs="Queen Size" precio-qs="7300" tam-ks="King Size"
+                precio-ks="12000">
+                <div class="card-img" style="background-image: url(./images/Colchones/Vive\ Plus.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $5,100 | MAT: $9,000
+                            <br>
+                            Q.S: $7,300 | K.S: $12,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Vive Plus</h1>
+                <p class="aviso">(Gama Alta - Doble Colchoneta)</p>
+                <p class="descripcion">Máximo confort con doble capa de acolchado suave. Estabilidad y soporte
+                    excepcional.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Premium" tam-indi="Individual" precio-indiv="2600"
+                tam-matri="Matrimonial" precio-matri="3500" tam-qs="Queen Size" precio-qs="4300" tam-ks="King Size"
+                precio-ks="5600">
+                <div class="card-img" style="background-image: url(./images/Colchones/Premium.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $2,600 | MAT: $3,500
+                            <br>
+                            Q.S: $4,300 | K.S: $5,600
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Premium</h1>
+                <p class="aviso">(Ortopédico Premium)</p>
+                <p class="descripcion">Núcleo ortopédico firme con acolchado suave. Tela fresca y duradera con
+                    capitonado de brinco.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Raggio" tam-indi="Individual" precio-indiv="3800"
+                tam-matri="Matrimonial" precio-matri="5900" tam-qs="Queen Size" precio-qs="7700" tam-ks="King Size"
+                precio-ks="8000">
+                <div class="card-img" style="background-image: url(./images/Colchones/Raggio.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,800 | MAT: $5,900
+                            <br>
+                            Q.S: $7,700 | K.S: $8,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Raggio</h1>
+                <p class="aviso">(Ortopédico Premium)</p>
+                <p class="descripcion">Tela de alta calidad con piller de 20mm y Delcron. Soporte ortopédico superior.
+                </p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Memory Foam" tam-indi="Individual" precio-indiv="8500"
+                tam-matri="Matrimonial" precio-matri="11000" tam-qs="Queen Size" precio-qs="12500" tam-ks="King Size"
+                precio-ks="14000">
+                <div class="card-img" style="background-image: url(./images/Colchones/Memory\ Foam.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $8,500 | MAT: $11,000
+                            <br>
+                            Q.S: $12,500 | K.S: $14,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Memory Foam</h1>
+                <p class="aviso">(Tecnología Sin Resortes)</p>
+                <p class="descripcion">Aglutinado densidad 40. Tela 100% algodón hipoalergénico. Se adapta totalmente a
+                    tu cuerpo.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Ontario" tam-indi="Individual" precio-indiv="1800"
+                tam-matri="Matrimonial" precio-matri="2200" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="A cotizar">
+                <div class="card-img" style="background-image: url(./images/Colchones/Ontario.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $1,800 | MAT: $2,200
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Ontario</h1>
+                <p class="aviso">(Súper Firme - Aglutinado)</p>
+                <p class="descripcion">Excelente soporte a precio accesible. Material aglutinado que no se hunde y tela
+                    100% algodón.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Aloe Vera" tam-indi="Individual" precio-indiv="2700"
+                tam-matri="Matrimonial" precio-matri="3000" tam-qs="Queen Size" precio-qs="A cotizar" tam-ks="King Size"
+                precio-ks="A cotizar">
+                <div class="card-img" style="background-image: url(./images/Colchones/Aloe\ Vera.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $2,700 | MAT: $3,000
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Aloe Vera</h1>
+                <p class="aviso">(Modelo Reforzado)</p>
+                <p class="descripcion">Más grueso y resistente. Tela con tratamiento de Aloe Vera para mayor frescura y
+                    suavidad.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Nebbia" tam-indi="Individual" precio-indiv="3200"
+                tam-matri="Matrimonial" precio-matri="4200" tam-qs="Queen Size" precio-qs="5500" tam-ks="King Size"
+                precio-ks="6900">
+                <div class="card-img" style="background-image: url(./images/Colchones/Nebbia.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,200 | MAT: $4,200
+                            <br>
+                            Q.S: $5,500 | K.S: $6,900
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Nebbia</h1>
+                <p class="aviso">(Firmeza Media)</p>
+                <p class="descripcion">Equilibrio perfecto entre durabilidad y estabilidad. Ideal para el descanso
+                    diario.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Tutti Fruti" tam-indi="Individual" precio-indiv="3000"
+                tam-matri="Matrimonial" precio-matri="4000" tam-qs="Queen Size" precio-qs="5200" tam-ks="King Size"
+                precio-ks="6500">
+                <div class="card-img" style="background-image: url(./images/Colchones/Tutti\ Fruti.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,000 | MAT: $4,000
+                            <br>
+                            Q.S: $5,200 | K.S: $6,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Tutti Fruti</h1>
+                <p class="aviso">(Gama Media - Confort Flexible)</p>
+                <p class="descripcion">Diseño fresco y juvenil con gran soporte. Ideal para quienes buscan un descanso
+                    equilibrado y duradero.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Elegance" tam-indi="Individual" precio-indiv="3600"
+                tam-matri="Matrimonial" precio-matri="4800" tam-qs="Queen Size" precio-qs="6000" tam-ks="King Size"
+                precio-ks="7500">
+                <div class="card-img" style="background-image: url(./images/Colchones/Elegance.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,600 | MAT: $4,800
+                            <br>
+                            Q.S: $6,000 | K.S: $7,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Elegance</h1>
+                <p class="aviso">(Calidad Premium)</p>
+                <p class="descripcion">Como su nombre lo dice, elegancia y confort en un solo lugar. Acabados de lujo
+                    con soporte ortopédico de alta densidad.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Passion" tam-indi="Individual" precio-indiv="3600"
+                tam-matri="Matrimonial" precio-matri="4800" tam-qs="Queen Size" precio-qs="6000" tam-ks="King Size"
+                precio-ks="7500">
+                <div class="card-img" style="background-image: url(./images/Colchones/Passion.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $3,600 | MAT: $4,800
+                            <br>
+                            Q.S: $6,000 | K.S: $7,500
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Passion</h1>
+                <p class="aviso">(Calidad Premium - Doble Colchoneta)</p>
+                <p class="descripcion">Pasión por el descanso. Doble colchoneta reforzada para una sensación de suavidad
+                    superior sin perder la firmeza.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+            <div id="Card" class="card colchon" producto="Colchón: Europa" tam-indi="Individual" precio-indiv="2800"
+                tam-matri="Matrimonial" precio-matri="3400" tam-qs="Queen Size" precio-qs="4400" tam-ks="King Size"
+                precio-ks="5400">
+                <div class="card-img" style="background-image: url(./images/Colchones/Europa.png);">
+                    <div class="precios">
+                        <h2 class="card-precio">
+                            IND: $2,800 | MAT: $3,400
+                            <br>
+                            Q.S: $4,400 | K.S: $5,400
+                        </h2>
+                    </div>
+                </div>
+                <h1 class="card-producto">Colchón: Europa</h1>
+                <p class="aviso">(Gama Media - Estilo Clásico)</p>
+                <p class="descripcion">Un clásico que nunca falla. Firmeza ideal para el cuidado de la espalda con una
+                    excelente relación calidad-precio.</p>
+                <p>Comprar o Apartar</p>
+                <div class="tam">
+                    <p id="btn-indi" class="tam-select"><a href="#">Individual</a></p>
+                    <p id="btn-matri" class="tam-select"><a href="#">Matrimonial</a></p>
+                    <p id="btn-qs" class="tam-select"><a href="#">Queen Size</a></p>
+                    <p id="btn-ks" class="tam-select"><a href="#">King Size</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--FLOTANTE-->
+    <a href="https://wa.me/558693125?text=Hola!,%20Me%20gustaría%20pedir%20informes" class="button-whats">
+        <img src="./images/whatsapp.png" alt="">
+        <p href="https://wp.me/558693125?text=Hola!,%20Me%20gustaría%20pedir%20informes" class="num-whats">558-693-1225</p>
+    </a>
+    <!--FLOTANTE-->
+
+    <div class="marcas"></div>
+    <footer id="Footer" class="footer">
+        <div class="footer-1"></div>
+        <div class="footer-2"></div>
+    </footer>
+
+    <script src="./js/sub-menu.js"></script>
+    <script src="./js/padding-header.js"></script>
+    <script src="./js/producto.js"></script>
+    <script src="./js/ventana.js"></script>
+</body>
+
+</html>
